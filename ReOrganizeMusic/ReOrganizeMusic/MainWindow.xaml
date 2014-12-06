@@ -3,6 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Content="Source Path" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="SourcePathTextBox" Text="K:\04 Audio\A\Pop &amp; Rock" Grid.Column="1" Height="23" TextWrapping="Wrap" Width="Auto" VerticalAlignment="Top"/>
+        <Button Grid.Column="2" Content="Button" Width="75" Height="20" VerticalAlignment="Top" Click="Button_Click"/>
     </Grid>
 </Window>
